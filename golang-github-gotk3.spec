@@ -13,6 +13,17 @@ Version:                0.6.4.1
 
 %gometa -L -f
 
+%global godevelheader %{expand:
+BuildRequires:  pkgconfig(cairo)
+BuildRequires:  pkgconfig(cairo-gobject)
+BuildRequires:  pkgconfig(gdk-3.0)
+BuildRequires:  pkgconfig(gio-2.0)
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gobject-2.0)
+BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(pango)
+}
+
 %global common_description %{expand:
 Go bindings for GTK3.}
 
