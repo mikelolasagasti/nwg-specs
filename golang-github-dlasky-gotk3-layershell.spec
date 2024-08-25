@@ -29,6 +29,8 @@ License:        MIT
 URL:            %{gourl}
 Source:         %{gosource}
 
+BuildRequires:  pkgconfig(gtk-layer-shell-0)
+
 %description %{common_description}
 
 %gopkg
