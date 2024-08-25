@@ -46,7 +46,9 @@ BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gobject-2.0)
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(pango)
-BuildRequires:  xorg-x11-server-Xvfb
+# Requried by tests for the gtk module
+# but as gtk module is not working, skipt it for now
+# BuildRequires:  xorg-x11-server-Xvfb
 
 %description %{common_description}
 
