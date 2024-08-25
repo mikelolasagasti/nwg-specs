@@ -14,6 +14,10 @@
 
 %gometa -L -f
 
+%global godevelheader %{expand:
+Requires:  pkgconfig(gtk-layer-shell-0)
+}
+
 %global common_description %{expand:
 Gotk3 addon module that provides gtk_layer_shell compatibiility.}
 
